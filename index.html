@@ -22,7 +22,6 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -53,8 +52,8 @@
             <div class="row mb-5">
                 <div class="col text-center">
                     <label for="customRange1" class="form-label"><h2>Choose Number of Characters</h2></label>
-                    <input type="range" class="form-range" min="8" max="128" id="customRange1" onchange="updateTextInput(this.value);">
-                    <input type="text" id="textInput" value="" readonly>
+                    <input type="range" class="form-range" value="8" min="8" max="128" id="customRange1" onchange="updateTextInput(`${this.value} characters`);" readonly>
+                    <input type="text" id="textInput" placeholder="8 characters" value="" readonly>
                 </div>
             </div>
             <div class="row mb-5">
