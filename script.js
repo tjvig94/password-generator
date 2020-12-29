@@ -1,3 +1,7 @@
+var oopsModal = new bootstrap.Modal(document.getElementById("oopsModal"), {
+  keyboard: false
+})
+
 function updateTextInput(val) {
     document.getElementById('textInput').value=val; 
   }
@@ -19,7 +23,10 @@ function generatePassword() {
       password += characters.charAt(Math.floor(Math.random()*characters.length));
     }
 
-  document.getElementById("generate").placeholder = password;
+  (btncheck1.checked == false && btncheck1.checked == false && btncheck1.checked == false && btncheck1.checked == false) ? oopsModal.show() : document.getElementById("generate").placeholder = password;
 }
 
 passwordGen.addEventListener("click", generatePassword);
+
+
+
