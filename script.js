@@ -7,15 +7,8 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var num = "0123456789";
 var special = "~!@#$%^&*-_=+/?><";
 
-var characters = "";
-(btncheck1.checked) ? characters += lower : "";
-(btncheck2.checked) ? characters += upper : "";
-(btncheck3.checked) ? characters += num : "";
-(btncheck4.checked) ? characters += special : "";
-
-
-
 function generatePassword() {
+  let characters = "";
   (btncheck1.checked) ? characters += lower : "";
   (btncheck2.checked) ? characters += upper : "";
   (btncheck3.checked) ? characters += num : "";
