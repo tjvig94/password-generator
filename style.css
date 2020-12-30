@@ -1,8 +1,15 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #bedbbb;
+}
+
 h1 {
+    font-family: 'Audiowide', cursive;
     font-size: 3rem;
 }
 
 h2 {
+    font-family: 'Audiowide', cursive;
     font-size: 1.5rem;
 }
 
@@ -10,6 +17,3 @@ p {
     font-size: 1.25rem;
 }
 
-body {
-    background-color: #bbbbbb;
-}

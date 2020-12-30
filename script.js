@@ -32,5 +32,4 @@ function copyText() {
   let password = document.getElementById("passBox");
   password.select();
   document.execCommand("copy");
-  document.getElementById('copyButton').innerHTML = "Copied to Clipboard!";
 } 
