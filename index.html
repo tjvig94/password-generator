@@ -32,6 +32,9 @@
             <div class="row mb-5">
                 <div class="col text-center">
                     <h1>Password Generator</h1>
+                    <p id="test">
+                        Select at least one character type. Then, use the slider to select how many characters you would like in your password. Click "Generate My Password!" and then copy to your clipboard.
+                    </p>
                 </div>
             </div>
             <div class="row mb-5">
@@ -60,7 +63,11 @@
                 <button type="button" class="btn btn-outline-primary" id="passwordGen">Generate My Password!</button>
             </div>
             <div class="row mb-5">
-                <input class="form-control" id="generate" type="text" placeholder="Generated Password Here!" aria-label="Generated password" readonly>
+                <div class="input-group mb-5">
+                    <span class="input-group-text">Your Password:</span>
+                    <textarea class="form-control" id="passBox" aria-label="With textarea" readonly></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-primary" id="copyButton" onclick="copyText()">Copy to Clipboard</button>
             </div>
         </div>
     </form>
