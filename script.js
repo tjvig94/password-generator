@@ -34,5 +34,3 @@ function copyText() {
   document.execCommand("copy");
   document.getElementById('copyButton').innerHTML = "Copied to Clipboard!";
 } 
-
-// copy button not committed yet
