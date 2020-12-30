@@ -51,28 +51,39 @@
                     <label class="btn btn-outline-secondary" for="btncheck3">Numeric</label>
 
                     <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="btncheck4">Special Characters</label>
+                    <label class="btn btn-outline-secondary" for="btncheck4">Symbols</label>
                 </div>
             </div>
             <div class="row mb-5">
                 <div class="col text-center">
                     <label for="customRange1" class="form-label"><h2>Choose Number of Characters</h2></label>
                     <input type="range" class="form-range" value="8" min="8" max="128" id="customRange1" onchange="updateTextInput(`${this.value} characters`);" readonly>
-                    <input type="text" id="textInput" placeholder="8 characters" value="" readonly>
+                    <h2 id="textInput">8 Characters</h2>
                 </div>
             </div>
             <div class="row mb-5">
                 <button type="button" class="btn btn-outline-secondary" id="passwordGen">Generate My Password!</button>
             </div>
             <div class="row mb-5">
-                <div class="input-group mb-5">
-                    <span class="input-group-text">Your Password:</span>
+                <h2>Your Password:</h2>
+                <div class="input-group mb-5">                   
                     <textarea class="form-control" id="passBox" aria-label="With textarea" readonly></textarea>
-                    <button type="button" class="btn btn-outline-secondary" id="copyButton" onclick="copyText()">Copy to Clipboard</button>
+                    <button type="button" class="btn btn-outline-secondary" id="copyButton" onclick="copyText()">Copy</button>
                 </div>               
             </div>
         </div>
     </form>
+
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <p>
+                    &#169; Tim Vigneau 2020. 
+                </p>                
+            </div>
+        </div>
+
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="script.js"></script>

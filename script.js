@@ -3,7 +3,7 @@ var oopsModal = new bootstrap.Modal(document.getElementById("oopsModal"), {
 })
 
 function updateTextInput(val) {
-    document.getElementById('textInput').value=val; 
+    document.getElementById('textInput').innerHTML=val; 
 }
 
 var lower = "abcdefghijklmnopqrstuvwxyz";
@@ -32,4 +32,5 @@ function copyText() {
   let password = document.getElementById("passBox");
   password.select();
   document.execCommand("copy");
+  document.getElementById("copyButton").innerHTML = "Copied!"
 } 
