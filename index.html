@@ -39,29 +39,32 @@
                     </p>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-2 selectors">
                 <div class="col btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="btncheck1">Lowercase</label>
+                    <input type="checkbox" class="btn-check" id="lowercase" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="lowercase">Lowercase</label>
 
-                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="btncheck2">Uppercase</label>
+                    <input type="checkbox" class="btn-check" id="uppercase" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="uppercase">Uppercase</label>
+                </div>
+            </div>        
+            <div class="row mb-5 selectors">
+                <div class="col btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="numbers" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="numbers">Numbers</label>
 
-                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="btncheck3">Numeric</label>
-
-                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="btncheck4">Symbols</label>
+                    <input type="checkbox" class="btn-check" id="symbols" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="symbols">Symbols</label>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 selectors">
                 <div class="col text-center">
-                    <label for="customRange1" class="form-label"><h2>Choose Number of Characters</h2></label>
-                    <input type="range" class="form-range" value="8" min="8" max="128" id="customRange1" onchange="updateTextInput(`${this.value} characters`);" readonly>
+                    <label for="charnumber" class="form-label"><h2>Choose Number of Characters</h2></label>
+                    <input type="range" class="form-range" value="8" min="8" max="128" id="charNumber" onchange="updateTextInput(`${this.value} characters`);" readonly>
                     <h2 id="textInput">8 Characters</h2>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 selectors">
                 <button type="button" class="btn btn-outline-secondary" id="passwordGen">Generate My Password!</button>
             </div>
             <div class="row mb-5">

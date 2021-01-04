@@ -32,3 +32,8 @@ footer p {
     transform: translateX(-50%);
   }
 
+div.selectors {
+    margin: auto;
+    width: 75%;
+}
+
